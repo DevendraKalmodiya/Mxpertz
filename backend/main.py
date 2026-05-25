@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from pypdf import PdfReader
 
-# Import your local modules
 from database import SessionLocal, init_db, Resume, get_db
 from ai_logic import get_gemini_analysis, get_embedding
 
@@ -65,8 +64,6 @@ async def screen_resumes(
             new_resume = Resume(
                 filename=file.filename,
                 content=resume_text
-                # If you want to store the vector, you'd handle it here 
-                # using a raw SQL execution or pgvector-python
             )
             db.add(new_resume)
             db.commit()
