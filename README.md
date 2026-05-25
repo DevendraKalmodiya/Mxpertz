@@ -97,4 +97,4 @@ In your second terminal window, start the development server:
 The user interface will launch on your local network, typically accessible at http://localhost:5173. Open this URL in your web browser to interact with the system.
 
 # Screenshots
-https://drive.google.com/file/d/1thf70T0ESrJ3qBZ_i0cWN8HN13YRpQLi/view?usp=sharing
+https://drive.google.com/drive/folders/174aKvjMrq4Q7IXCWcEeASxcAUd75Uzjz?usp=sharing
