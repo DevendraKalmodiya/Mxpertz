@@ -35,7 +35,6 @@ Clone the repository and navigate to the project directory:
 **2. Backend Configuration**
  Navigate to the backend directory, initialize a virtual environment, and install the required dependencies:
 
-Bash
 1. cd backend
 2. python -m venv venv
 
@@ -58,7 +57,6 @@ Create a .env file in the backend/ directory and include your specific credentia
 **4. Frontend Configuration**
 Open a separate terminal instance, navigate to the frontend directory, and install the necessary node modules:
 
-Bash
 cd frontend
 npm install
 
@@ -68,7 +66,6 @@ The application requires both the backend API and the frontend client to run con
 **1. Execute the FastAPI Backend**
 Ensure your virtual environment is active in the backend terminal, then start the server:
 
-Bash.
 1. cd backend
 2. python -m uvicorn main:app --reload
 
@@ -78,7 +75,6 @@ The backend API will initialize at http://127.0.0.1:8000. You can access the aut
 
 In your second terminal window, start the development server:
 
-Bash
 1. cd frontend
 2. npm run dev
 
