@@ -30,7 +30,7 @@ Supabase PostgreSQL Connection URL
 Clone the repository and navigate to the project directory:
 
 1. git clone https://github.com/YourUsername/smart-resume-screener.git
-2. cd smart-resume-screener
+2. cd Mxpertz
 
 **2. Backend Configuration**
  Navigate to the backend directory, initialize a virtual environment, and install the required dependencies:
