@@ -50,6 +50,22 @@ pip install fastapi uvicorn sqlalchemy pypdf google-generativeai python-dotenv p
 **3. Environment Variables**
 Create a .env file in the backend/ directory and include your specific credentials. Ensure this file is listed in your .gitignore and never committed to version control.
 
+**4. Database SetUp(Supabase)**
+1. Enable the pgvector extension for semantic search
+
+CREATE EXTENSION IF NOT EXISTS vector;
+
+3. Create the table to store parsed resumes and AI embeddings
+
+CREATE TABLE candidates (
+   
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    filename TEXT NOT NULL,
+    raw_text TEXT,
+    embedding VECTOR(768),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
 **Code snippet**
 1. GEMINI_API_KEY=your_google_gemini_api_key
 2. DATABASE_URL=your_supabase_postgresql_url
