@@ -83,3 +83,6 @@ Bash
 2. npm run dev
 
 The user interface will launch on your local network, typically accessible at http://localhost:5173. Open this URL in your web browser to interact with the system.
+
+# Screenshots
+https://drive.google.com/file/d/1thf70T0ESrJ3qBZ_i0cWN8HN13YRpQLi/view?usp=sharing
