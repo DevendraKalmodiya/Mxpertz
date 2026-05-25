@@ -26,8 +26,7 @@ class Resume(Base):
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(Text)
     content = Column(Text)
-    # Note: The 'embedding' column is managed via raw SQL or pgvector-python 
-    # For a machine test, we handle the vector math in the Gemini/FastAPI layer
+  
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
 def init_db():
