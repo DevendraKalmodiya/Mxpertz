@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, XCircle, FileBadge, BriefcaseBusiness } from 'lucide-react';
 
 export default function ResultCard({ result, index }) {
-  // We now destructure 'experience' from the result object
   const { filename, score, experience, matched_skills = [], missing_skills = [], explanation } = result;
 
   const getScoreTheme = (score) => {
