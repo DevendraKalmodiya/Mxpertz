@@ -13,7 +13,6 @@ async def get_embedding(text):
     Generates a high-quality vector using gemini-embedding-2.
     """
     try:
-        # Using the exact name 'models/gemini-embedding-2' from your available models list
         model = "models/gemini-embedding-2"
         result = genai.embed_content(
             model=model,
@@ -30,7 +29,7 @@ async def get_gemini_analysis(jd, resume_text):
     """
     Uses gemini-2.5-flash for blazing fast, structured resume analysis.
     """
-    # Using 'models/gemini-2.5-flash' from your live environment
+   
     model = genai.GenerativeModel('models/gemini-2.5-flash')
     
     prompt = f"""
@@ -60,7 +59,6 @@ async def get_gemini_analysis(jd, resume_text):
         response = model.generate_content(prompt)
         text_response = response.text
         
-        # 🛠️ THE FIX: Smart extraction to ignore chatty AI text
         start_idx = text_response.find('{')
         end_idx = text_response.rfind('}') + 1
         
